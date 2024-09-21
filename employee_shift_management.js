@@ -6,3 +6,10 @@ const employees = [
 { name: 'Emily', shifts: [{ day: 'Friday', hours: 8 }] }    
 ];
 
+//Task2: Create a Function to Display Employee Shift Details
+function displayEmployeeShifts(employee){
+console.log(`Employe:${employee.name}`)
+console.log(`Assigned shifts:${employee.shifts}`)
+}
+displayEmployeeShifts( employees[0])
+
