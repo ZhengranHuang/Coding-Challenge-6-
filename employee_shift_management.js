@@ -8,8 +8,21 @@ const employees = [
 
 //Task2: Create a Function to Display Employee Shift Details
 function displayEmployeeShifts(employee){
-console.log(`Employe:${employee.name}`)
-console.log(`Assigned shifts:${employee.shifts}`)
+console.log(`Employe:${employee.name}`);
+console.log(`Shifts:${employee.shifts}`);
 }
-displayEmployeeShifts( employees[0])
+displayEmployeeShifts(employees[0])
 
+//Task3: Create a Function to Assign a New Shift
+function assignShift(name, day, hours){
+let employee = employees.find(employ => employ.name === name);
+let days = employees.find(days => days.name === day);
+let hour = employees.find(hour => hour.name === hours);
+if(employee,days,hour){
+console.log(`Employee${employee} already assigned.`);
+}
+else{
+console.log(`Error`)
+}
+}
+assignShift(John, Monday, 8)
