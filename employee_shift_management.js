@@ -38,4 +38,9 @@ if(employee){
 console.log(`Employee${employee} need work ${totalhours}.`)
 }
 }
-calculateTotalHours('John')
+calculateTotalHours('John');
+
+//Task 5:Create a Function to List Employees with Free Days
+function listAvailableEmployees(day){
+//So hard:(
+}
