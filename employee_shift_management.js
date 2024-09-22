@@ -9,20 +9,23 @@ const employees = [
 //Task2: Create a Function to Display Employee Shift Details
 function displayEmployeeShifts(employee){
 console.log(`Employe:${employee.name}`);
-console.log(`Shifts:${employee.shifts}`);
-}
+employee.shifts.forEach(shift => {
+console.log(`Day: ${shift.day}, Hours: ${shift.hours}`);
+})}
 displayEmployeeShifts(employees[0])
 
 //Task3: Create a Function to Assign a New Shift
 function assignShift(name, day, hours){
 let employee = employees.find(employ => employ.name === name);
-let days = employees.find(days => days.name === day);
-let hour = employees.find(hour => hour.name === hours);
-if(employee,days,hour){
-console.log(`Employee${employee} already assigned.`);
+employee.shifts.forEach(shift => {
+employee.shifts.find(da => da.day === day);
+employee.shifts.find(ho => ho.hours === hours);
+if(employee,day,hours){
+console.log(`Employee${employee} already assigned.Time is ${day} and ${hours}`);
 }
 else{
-console.log(`Error`)
+employee.shifts.push({day: day, hours: hours});
+console.log(`New shift assigned ${day} and  ${hours}`);
 }
-}
-assignShift(John, Monday, 8)
+})};
+assignShift('John', 'Monday', 8)
