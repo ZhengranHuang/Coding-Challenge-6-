@@ -29,3 +29,13 @@ console.log(`New shift assigned ${day} and  ${hours}`);
 }
 })};
 assignShift('John', 'Monday', 8)
+
+//Task 4:Create a Function to Calculate Total Hours Worked
+function calculateTotalHours(name){
+let totalhours = employees.shifts.reduce((sum, shift) => sum + shift.hours, 0);
+let employee = employees.find(employ => employ.name === name);
+if(employee){
+console.log(`Employee${employee} need work ${totalhours}.`)
+}
+}
+calculateTotalHours('John')
